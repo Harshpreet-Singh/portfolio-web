@@ -392,6 +392,15 @@ section .title::after{
 
 
 /* contact section styling */
+
+
+.links{
+    color: rgb(24, 24, 87);
+}
+.links:hover{
+    color: crimson;
+}
+
 .contact .title::after{
     content: "get in touch";
 }
