@@ -77,8 +77,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
+/* navbarr styling */
+.navbarr{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -86,32 +86,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbarr.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+.navbarr .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbarr .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbarr .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbarr.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.navbarr .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbarr .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -119,13 +119,18 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbarr .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+.navbarr.sticky .menu li a:hover{
     color: #fff;
 }
-
+.links{
+    color: rgb(24, 24, 87);
+}
+.links:hover{
+    color: crimson;
+}
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -262,6 +267,21 @@ section .title::after{
     margin-top: -27px !important;
 }
 
+/* pictures collection styling */
+.pictures, .pictures{
+    color:#fff;
+    background: #111;
+}
+.pictures .title::before,
+.pictures .title::before{
+    background: #fff;
+}
+.pictures .title::after,
+.pictures .title::after{
+    background: #111;
+    /* content: "what i provide"; */
+}
+
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -274,7 +294,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    /* content: "what i provide"; */
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -392,15 +412,6 @@ section .title::after{
 
 
 /* contact section styling */
-
-
-.links{
-    color: rgb(24, 24, 87);
-}
-.links:hover{
-    color: crimson;
-}
-
 .contact .title::after{
     content: "get in touch";
 }
@@ -477,7 +488,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .navbar .menu{
+    .navbarrr .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -488,13 +499,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbarrr .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbarrr .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbarrr .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
