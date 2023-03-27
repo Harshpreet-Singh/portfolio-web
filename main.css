@@ -463,6 +463,16 @@ footer span a:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -480,6 +490,7 @@ footer span a:hover{
         padding: 0 50px;
     }
 }
+
 @media (max-width: 947px){
     .menu-btn{
         display: block;
@@ -562,13 +573,15 @@ footer span a:hover{
         width: 100%;
     }
 }
+
 @media (max-width: 560px) {
     .home{
         background-image: url("images/profile-1.jpg");
     }    
 }
+
 @media (max-width: 500px) {
-    /* .home{
+    /* .home{   
         background-image: url("images/profile-1.jpg");
     } */
     .home .home-content .text-2{
